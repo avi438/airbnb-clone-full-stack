@@ -1,0 +1,37 @@
+//Middlewares can :
+execute any code
+make changes to the req and res
+end the res res cycle
+call the next Middleware function in the stack
+
+it can be many types like application Middleware, router, error handling, third party, buildin Middleware etc.
+
+Middleware run always irrelavant to req error
+`middleware should be declared at first or after req, avoid after res or at end`
+
+eg: app.use( () => {
+    console.log("I am Middleware.");
+})
+
+//next() in Middleware
+ 
+app.use( (req, res, next) => {
+    console.log("I am Middleware.");
+})
+
+`we can create utility middleware like req.method, req.responseTime etc`
+
+app.use( "/random" (req, res, next) => {
+    console.log("I am only for random api call.");
+})
+
+
+//error middleware
+app.use( (req, res) => {
+    res.status(404).send("page not found");
+})
+
+`middleware can be used to authenticate users/api`
+
+
+ 
