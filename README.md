@@ -3,10 +3,15 @@
 STEP: 1
 
 Must include your .env file with MongoDb and cloudinary secret code
+
 CLOUD_NAME=
+
 CLOUD_API_KEY=
+
 CLOUD_API_SECRET=
+
 ATLAS_DB=
+
 
 STEP: 2
 
