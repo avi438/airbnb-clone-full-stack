@@ -1,4 +1,4 @@
-# Airbnb Clone With Frontend and Backend using NodeJs, ExpressJs, and EJS 
+# Airbnb Clone With Frontend and Backend Technology using NodeJs, ExpressJs, and EJS 
 
 STEP: 1
 
